@@ -7,9 +7,23 @@ const share = $("#share");
 const stop = $("#stop");
 const live = $("#live");
 const interval = $("#interval");
+const voiceToggle = $("#voice");
+const voicePlayer = $("#voice-player");
 let stream;
 let timer;
+let busy = false;
 const history = [];
+
+async function speak(text) {
+  if (!voiceToggle.checked || !text) return;
+  try {
+    const response = await fetch("/api/speak", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ text }) });
+    if (!response.ok) { console.error("speak: resposta não ok", response.status, await response.text()); return; }
+    const blob = await response.blob();
+    voicePlayer.src = URL.createObjectURL(blob);
+    await voicePlayer.play();
+  } catch (error) { console.error("speak: falhou", error); }
+}
 
 function setStatus(text) { status.textContent = text; }
 function setCaptureState(active) {
@@ -53,11 +67,13 @@ function render(text) {
     .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
     .replace(/\n/g, "<br>");
 }
-async function ask(customQuestion) {
+async function ask(customQuestion, { silent } = {}) {
+  if (busy) { if (!silent) setStatus("Aguarde a explicação atual terminar..."); return; }
   const prompt = (customQuestion || question.value || "Explique o inglês que aparece nesta tela.").trim();
   const image = captureFrame();
   if (!image && !history.length) { setStatus("Compartilhe uma tela primeiro"); return; }
-  $("#explain").disabled = true; setStatus("Professor analisando...");
+  busy = true;
+  $("#explain").disabled = true; setStatus("Professor analisando... (pode levar um tempinho)");
   try {
     const response = await fetch("/api/explain", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ image_data_url: image, question: prompt, history }) });
     const data = await response.json();
@@ -65,13 +81,14 @@ async function ask(customQuestion) {
     render(data.answer); history.push({ role: "user", text: prompt }, { role: "assistant", text: data.answer });
     if (history.length > 12) history.splice(0, 2);
     question.value = ""; setStatus("Explicação pronta");
+    speak(data.answer);
   } catch (error) { render(`**Não consegui analisar agora.** ${error.message}`); setStatus("Verifique a configuração"); }
-  finally { $("#explain").disabled = false; }
+  finally { busy = false; $("#explain").disabled = false; }
 }
 share.addEventListener("click", startCapture); stop.addEventListener("click", endCapture);
 live.addEventListener("change", () => {
   clearInterval(timer);
-  if (live.checked) { timer = setInterval(() => ask("Explique o novo inglês visível nesta tela. Só responda se houver uma frase nova e legível."), Number(interval.value) * 1000); ask("Explique o inglês visível nesta tela."); }
+  if (live.checked) { timer = setInterval(() => ask("Explique o novo inglês visível nesta tela. Só responda se houver uma frase nova e legível.", { silent: true }), Number(interval.value) * 1000); ask("Explique o inglês visível nesta tela."); }
 });
 interval.addEventListener("change", () => { if (live.checked) { live.checked = false; live.dispatchEvent(new Event("change")); live.checked = true; live.dispatchEvent(new Event("change")); } });
 $("#question-form").addEventListener("submit", (event) => { event.preventDefault(); ask(); });

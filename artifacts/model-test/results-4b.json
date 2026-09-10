@@ -1,0 +1,42 @@
+[
+  {
+    "model": "qwen3:4b-instruct-2507-q4_K_M",
+    "case": 1,
+    "prompt": "Hoje estou cansado. Não quero uma aula chata. Gosto de jogos, principalmente Minecraft.",
+    "first_token_s": 12.53,
+    "total_s": 15.41,
+    "tokens_s": 22.21,
+    "done_reason": "stop",
+    "answer": "I see — you're feeling tired, and you love Minecraft. That’s cool. What if we made a small game in English, like a simple mission in the world of Minecraft? For example, you find a hidden chest and need to solve a riddle to open it. Would you like to try that?"
+  },
+  {
+    "model": "qwen3:4b-instruct-2507-q4_K_M",
+    "case": 2,
+    "prompt": "Eu falei \"I have 25 years\". Está certo? Me explica sem complicar.",
+    "first_token_s": 0.35,
+    "total_s": 5.91,
+    "tokens_s": 21.07,
+    "done_reason": "stop",
+    "answer": "Sim, \"I have 25 years\" está certo, mas depende do que você quer dizer.  \nSe você quer dizer que você tem 25 anos de idade, então sim, é natural.  \nPor exemplo: \"I have 25 years old\" é errado porque \"years\" não vai com \"old\" assim.  \nMas \"I have 25 years old\" não é natural.  \nO que você quer dizer é: \"I am 25 years old.\"  \nQuer ver um exemplo com uma situação?"
+  },
+  {
+    "model": "qwen3:4b-instruct-2507-q4_K_M",
+    "case": 3,
+    "prompt": "Qual a diferença entre \"I used to play\" e \"I am used to playing\"?",
+    "first_token_s": 0.3,
+    "total_s": 4.41,
+    "tokens_s": 20.49,
+    "done_reason": "stop",
+    "answer": "Great question! \"I used to play\" means you did something in the past, like playing soccer when you were younger. \"I am used to playing\" means you're comfortable doing something now — like you're used to playing video games every night.  \n\nSo one is about the past action, the other about current comfort.  \nDo you have a situation in mind where you'd use one or the other?"
+  },
+  {
+    "model": "qwen3:4b-instruct-2507-q4_K_M",
+    "case": 4,
+    "prompt": "Conversa anterior:\nAluno: Meu jogo favorito é Minecraft.\nProfessora: Podemos praticar inglês construindo uma casa.\nAluno: Pode ser.\nAgora continua a conversa e sugere o próximo passo.",
+    "first_token_s": 0.17,
+    "total_s": 2.76,
+    "tokens_s": 22.03,
+    "done_reason": "stop",
+    "answer": "Sure! Let’s say you’re building a house in Minecraft. What would you call your house? Like \"The Tree House\" or \"The Mountain Cabin\"?  \nNow, try saying it in English — just one word or two — and I’ll help you with the rest."
+  }
+]

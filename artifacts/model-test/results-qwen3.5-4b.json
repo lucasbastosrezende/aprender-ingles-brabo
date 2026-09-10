@@ -1,0 +1,42 @@
+[
+  {
+    "model": "qwen3.5:4b",
+    "case": 1,
+    "prompt": "Hoje estou cansado. Não quero uma aula chata. Gosto de jogos, principalmente Minecraft.",
+    "first_token_s": 13.77,
+    "total_s": 22.23,
+    "tokens_s": 9.44,
+    "done_reason": "stop",
+    "answer": "Compreendo perfeitamente, Lucas; às vezes a melhor \"aula\" é realmente um jogo. Podemos usar o Minecraft para praticar frases úteis na vida real, como pedir ajuda ou descrever o que vemos no mundo aberto. Você prefere tentar contar uma história sobre uma construção que fez hoje em inglês ou talvez tentemos fazer um pequeno diálogo simulando uma aventura no game?"
+  },
+  {
+    "model": "qwen3.5:4b",
+    "case": 2,
+    "prompt": "Eu falei \"I have 25 years\". Está certo? Me explica sem complicar.",
+    "first_token_s": 0.73,
+    "total_s": 7.6,
+    "tokens_s": 9.64,
+    "done_reason": "stop",
+    "answer": "Isso é quase certo, mas falta uma palavra importante: \"I have been twenty-five years old\" ou melhor ainda, \"I'm 25 years old\". Em inglês, usamos o verbo *to be* para idade, não *to have*. Quer tentar dizer isso de outra forma usando um tempo específico?"
+  },
+  {
+    "model": "qwen3.5:4b",
+    "case": 3,
+    "prompt": "Qual a diferença entre \"I used to play\" e \"I am used to playing\"?",
+    "first_token_s": 0.72,
+    "total_s": 9.44,
+    "tokens_s": 9.86,
+    "done_reason": "stop",
+    "answer": "A primeira expressão significa que você tinha o hábito de jogar no passado e não mais, enquanto a segunda indica uma adaptação atual ou costume atual às atividades de jogar. Por exemplo: \"I used to play soccer every day\" (eu costumava jogar futebol todo dia) contrasta com \"I am used to playing video games late at night\" (estou acostumado a jogar jogos eletrônicos até tarde da noite)."
+  },
+  {
+    "model": "qwen3.5:4b",
+    "case": 4,
+    "prompt": "Conversa anterior:\nAluno: Meu jogo favorito é Minecraft.\nProfessora: Podemos praticar inglês construindo uma casa.\nAluno: Pode ser.\nAgora continua a conversa e sugere o próximo passo.",
+    "first_token_s": 0.74,
+    "total_s": 5.68,
+    "tokens_s": 10.13,
+    "done_reason": "stop",
+    "answer": "That sounds great! Let's start by saying you want to \"build a house\" in Minecraft. You can try: \"I want to build a big house.\" Try reading that out loud and let me know if it feels natural for you."
+  }
+]

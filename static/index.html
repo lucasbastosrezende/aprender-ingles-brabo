@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR">
+  <html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="/static/style.css" />
   </head>
   <body>
-    <header>
-      <p class="eyebrow">SEU PROFESSOR DE TELA</p>
+    <div class="titlebar">
+      <span class="app-icon"></span>
       <h1>Inglês Brabo</h1>
-      <p class="subtitle">Entenda a frase como ela foi pensada em inglês — e não como uma tradução torta.</p>
-    </header>
+      <span class="subtitle">professor de tela, 100% local</span>
+    </div>
     <main>
       <section class="screen-panel card">
         <div class="card-title"><span class="dot"></span><h2>Tela de estudo</h2></div>
@@ -25,16 +25,19 @@
         <p class="privacy">Você escolhe a janela/aba. Capturas são enviadas somente quando há uma análise.</p>
       </section>
       <section class="teacher-panel card">
-        <div class="card-title"><span class="teacher-dot"></span><h2>Professor</h2><span id="status">Pronto para estudar</span></div>
+        <div class="card-title">
+          <span class="teacher-dot"></span><h2>Professor</h2>
+          <label class="voice-toggle"><input id="voice" type="checkbox" checked /> ler em voz alta</label>
+          <span id="status">Pronto para estudar</span>
+        </div>
         <article id="answer" class="answer">Compartilhe uma tela com uma frase em inglês e eu vou explicar o sentido, a estrutura e a ordem das palavras.</article>
         <form id="question-form">
-          <textarea id="question" rows="3" placeholder="Ex.: Por que usou ‘have been’ aqui? Ou: explique esta tela."></textarea>
+          <textarea id="question" rows="3" placeholder="Ex.: Por que usou 'have been' aqui? Ou: explique esta tela."></textarea>
           <div class="form-actions"><button id="explain" class="primary" type="submit">Explicar esta tela</button><span>Ctrl + Enter para enviar</span></div>
         </form>
       </section>
     </main>
-    <template id="message-template"><div class="message"></div></template>
+    <audio id="voice-player" hidden></audio>
     <script src="/static/app.js"></script>
   </body>
 </html>
-

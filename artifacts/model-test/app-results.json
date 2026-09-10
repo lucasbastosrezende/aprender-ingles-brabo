@@ -1,0 +1,26 @@
+[
+  {
+    "question": "Eu falei \"I have 25 years\" para dizer minha idade. Está certo?",
+    "seconds": 20.64,
+    "answer": "Sim, \"I have 25 years\" pode ser entendido, mas não é a forma mais natural.  \nNa verdade, dizemos \"I am 25 years old\" para falar da nossa idade.  \nPor exemplo: *I am 25 years old* — isso é como dizer \"tenho 25 anos\".  \nVocê já viu isso em filmes ou séries?",
+    "ocr_text": ""
+  },
+  {
+    "question": "Qual a diferença entre \"I used to play\" e \"I am used to playing\"?",
+    "seconds": 11.02,
+    "answer": "\"Used to play\" fala de algo que você fazia no passado, mas já não faz mais.  \nPor exemplo: *I used to play football when I was a kid* — eu jogava futebol quando era criança.  \n\"Am used to playing\" significa que você já está acostumado a fazer algo no presente.  \nPor exemplo: *I am used to playing video games every night* — estou acostumado a jogar video games todas as noites.  \nVocê já viu alguém falando assim em uma conversa?",
+    "ocr_text": ""
+  },
+  {
+    "question": "Hoje estou cansado. Não quero aula chata. Gosto de Minecraft.",
+    "seconds": 7.62,
+    "answer": "Ah, entendi! Cansado é normal, e Minecraft é um jogo que realmente dá energia.  \nVamos imaginar que você está construindo uma casa em um mundo de blocos — cada bloco é como uma palavra, e a casa é como uma frase completa.  \nSe você quiser, posso mostrar um exemplo com frases simples, como \"I build a house\" ou \"I place a block\".  \nQuer tentar um exemplo comigo agora?",
+    "ocr_text": ""
+  },
+  {
+    "question": "Como digo \"estou com fome\"? É \"I am with hunger\"?",
+    "seconds": 7.05,
+    "answer": "Não, \"I am with hunger\" não está certo. A expressão correta é \"I am hungry\".  \n\"Hungry\" é o adjetivo que descreve o estado de ter fome.  \nVocê pode dizer: \"I am hungry\" quando quer dizer que está com fome.  \nE se quiser, posso mostrar um exemplo com uma cena do dia a dia.",
+    "ocr_text": ""
+  }
+]

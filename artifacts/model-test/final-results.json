@@ -1,0 +1,82 @@
+[
+  {
+    "model": "qwen3.5:2b-q4_K_M",
+    "question": "Eu falei \"I have 25 years\" para dizer minha idade. Está certo?",
+    "answer": "Você está muito perto! Na verdade, a forma correta é \"I **am** 25 years old\", usando o verbo *to be* em vez de *have*. O verbo *have* geralmente se usa com quantidades ou coisas, não para dizer idade.\n\nPorém, se você quiser usar \"have\" no futuro, como \"I will have 25 years next year\", isso também é gramaticalmente correto! A diferença é que \"am\" indica a condição atual da sua idade, enquanto \"will have\" mostra uma previsão futura.",
+    "total_s": 9.74,
+    "tokens_s": 90.72,
+    "done_reason": "stop"
+  },
+  {
+    "model": "qwen3.5:2b-q4_K_M",
+    "question": "Qual a diferença entre \"I used to play\" e \"I am used to playing\"?",
+    "answer": "Essa é uma excelente pergunta sobre um dos usos mais comuns da língua inglesa! A diferença principal está no tempo e na estrutura do verbo *to be*.\n\nQuando usamos **\"I am used to playing\"**, significa que você já tem essa rotina há muito tempo. Por exemplo, se você sempre jogava futebol desde criança, agora você faz isso automaticamente sem precisar pensar. O \"used to\" aqui não indica uma ação no passado, mas sim um hábito estabelecido.\n\nPor outro lado, **\"I used to play\"** é mais comum para descrever algo que aconteceu no passado e provavelmente **não acontece mais**. Se você começou a jogar futebol quando era criança, mas agora só joga com amigos novos ou não joga mais sozinho, essa frase é perfeita. Ela enfatiza a mudança de comportamento ao longo do tempo.\n\nAcho que isso ajuda muito! Você já jogava futebol antes de começar o curso?",
+    "total_s": 4.3,
+    "tokens_s": 87.93,
+    "done_reason": "stop"
+  },
+  {
+    "model": "qwen3.5:2b-q4_K_M",
+    "question": "Como eu digo \"estou com fome\"? É \"I am with hunger\"?",
+    "answer": "Você não diz \"I am with hunger\". Para dizer que você está com fome, a frase correta é \"Eu estou com fome\" em português ou \"I'm hungry\" no inglês. A expressão \"with hunger\" soa estranha e não é usada nesse contexto. Você quer praticar o inglês agora? Podemos fazer um pequeno roleplay sobre algo que você gosta de comer!",
+    "total_s": 3.22,
+    "tokens_s": 85.41,
+    "done_reason": "stop"
+  },
+  {
+    "model": "qwen3.5:2b-q4_K_M",
+    "question": "Hoje estou cansado. Não quero aula chata. Gosto de Minecraft.",
+    "answer": "Entendi que você está cansado e quer algo mais leve sobre Minecraft! Como você gosta do jogo, podemos criar uma história curta juntos. Você prefere que eu crie um cenário ou que você descreva o que acontece?",
+    "total_s": 2.91,
+    "tokens_s": 89.52,
+    "done_reason": "stop"
+  },
+  {
+    "model": "qwen3.5:2b-q4_K_M",
+    "question": "Eu disse \"She don't like coffee\". Acertei?",
+    "answer": "Você está muito perto! Na verdade, a frase correta é \"She **doesn't** like coffee\" ou \"She **doesn't like** coffee\". O verbo *like* no presente simples não muda para o negativo.",
+    "total_s": 2.83,
+    "tokens_s": 85.91,
+    "done_reason": "stop"
+  },
+  {
+    "model": "qwen3:4b-instruct-2507-q4_K_M",
+    "question": "Eu falei \"I have 25 years\" para dizer minha idade. Está certo?",
+    "answer": "Not quite. \"I have 25 years\" sounds like you're saying you have 25 years of something, like experience or time.  \n\nTo say your age, you'd say \"I am 25 years old.\"  \n\nDo you want to practice saying that in English?",
+    "total_s": 11.43,
+    "tokens_s": 25.1,
+    "done_reason": "stop"
+  },
+  {
+    "model": "qwen3:4b-instruct-2507-q4_K_M",
+    "question": "Qual a diferença entre \"I used to play\" e \"I am used to playing\"?",
+    "answer": "Great question! \"I used to play\" means you played something in the past, but not anymore. Like, \"I used to play soccer when I was a kid.\"  \n\n\"I am used to playing\" means you're comfortable with playing now. Like, \"I am used to playing video games every night.\"  \n\nSo one is about the past, the other about current comfort.  \n\nWant to try a short roleplay with one of these? 😊",
+    "total_s": 7.21,
+    "tokens_s": 19.27,
+    "done_reason": "stop"
+  },
+  {
+    "model": "qwen3:4b-instruct-2507-q4_K_M",
+    "question": "Como eu digo \"estou com fome\"? É \"I am with hunger\"?",
+    "answer": "No, \"I am with hunger\" não é correto.  \nVocê diz \"I am hungry\" em inglês.  \n\"With\" é usado para coisas que estão juntas, como \"with my friend\".  \n\"Hungry\" é o adjetivo que descreve o estado de fome.  \nQuer tentar dizer \"I am hungry\" comigo?",
+    "total_s": 6.12,
+    "tokens_s": 22.17,
+    "done_reason": "stop"
+  },
+  {
+    "model": "qwen3:4b-instruct-2507-q4_K_M",
+    "question": "Hoje estou cansado. Não quero aula chata. Gosto de Minecraft.",
+    "answer": "I see you're tired. That's totally okay. Want to play a quick Minecraft scene together? Like building a house or exploring a cave?  \nOr maybe we can talk about a cool block or creature you saw in-game? What’s on your mind?",
+    "total_s": 5.0,
+    "tokens_s": 20.51,
+    "done_reason": "stop"
+  },
+  {
+    "model": "qwen3:4b-instruct-2507-q4_K_M",
+    "question": "Eu disse \"She don't like coffee\". Acertei?",
+    "answer": "Not quite. \"She don't like coffee\" is incorrect because \"don't\" is used with plural subjects or second person. For third person singular, like \"she\", you need \"doesn't\".  \nSo it should be: \"She doesn't like coffee.\"  \nWant to practice with a real-life example? Like a friend who doesn't like spicy food?",
+    "total_s": 5.98,
+    "tokens_s": 20.8,
+    "done_reason": "stop"
+  }
+]

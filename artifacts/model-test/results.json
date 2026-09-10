@@ -1,0 +1,82 @@
+[
+  {
+    "model": "gemma3:1b",
+    "case": 1,
+    "prompt": "Hoje estou cansado. Não quero uma aula chata. Gosto de jogos, principalmente Minecraft.",
+    "first_token_s": 7.1,
+    "total_s": 7.54,
+    "tokens_s": 111.52,
+    "done_reason": "stop",
+    "answer": "É compreensível. Às vezes, a gente precisa de um descanso. Minecraft é um jogo divertido, mas também pode ser cansativo. 😊\n\nVocê gosta de Minecraft?  Existe algum aspecto que te atrai muito nesse jogo?"
+  },
+  {
+    "model": "gemma3:1b",
+    "case": 2,
+    "prompt": "Eu falei \"I have 25 years\". Está certo? Me explica sem complicar.",
+    "first_token_s": 0.08,
+    "total_s": 0.53,
+    "tokens_s": 122.24,
+    "done_reason": "stop",
+    "answer": "Sim, você está certo! É uma forma de dizer que você tem muito tempo de vida. \n\nÉ só uma frase que indica o quanto você é experiente e, de certa forma, com muita história. \n\nQuer que eu te dê outro exemplo?\n"
+  },
+  {
+    "model": "gemma3:1b",
+    "case": 3,
+    "prompt": "Qual a diferença entre \"I used to play\" e \"I am used to playing\"?",
+    "first_token_s": 0.06,
+    "total_s": 1.9,
+    "tokens_s": 119.76,
+    "done_reason": "length",
+    "answer": "É uma pergunta muito boa! A diferença entre “I used to play” e “I am used to playing” é sutil, mas importante, especialmente quando se fala sobre hábitos e experiências passadas.\n\nVamos lá:\n\n*   **“I used to play”** – significa que você **já** passava tempo fazendo algo. É um passado que está em um certo ponto. Você tem uma memória de quando era mais comum fazer essa coisa. É como dizer “Eu costumava brincar de…”.\n\n*   **“I am used to playing”** – aqui, você está agora **envolvido** em fazer algo. É uma situação atual, onde você se sente confortável e familiar, e esse hábito se tornou uma parte da sua vida. É como dizer “Eu já brinco de… e me sinto bem com isso”.\n\n   **Exemplo:**\n    *   Imagine que, quando criança, você adorava desenhar.  “I used to play with crayons” (Eu já brincava com lápides) significa que você gostava de"
+  },
+  {
+    "model": "gemma3:1b",
+    "case": 4,
+    "prompt": "Conversa anterior:\nAluno: Meu jogo favorito é Minecraft.\nProfessora: Podemos praticar inglês construindo uma casa.\nAluno: Pode ser.\nAgora continua a conversa e sugere o próximo passo.",
+    "first_token_s": 0.09,
+    "total_s": 0.41,
+    "tokens_s": 112.99,
+    "done_reason": "stop",
+    "answer": "Okay, great! Let’s start with building a house together. Think about the design – do you want a simple house, or maybe something a little more elaborate? 😊"
+  },
+  {
+    "model": "qwen3.5:2b-q4_K_M",
+    "case": 1,
+    "prompt": "Hoje estou cansado. Não quero uma aula chata. Gosto de jogos, principalmente Minecraft.",
+    "first_token_s": 7.08,
+    "total_s": 7.59,
+    "tokens_s": 86.99,
+    "done_reason": "stop",
+    "answer": "Sinto muito que você esteja cansado hoje; é ótimo saber que prioriza o descanso! Como você gosta muito de Minecraft, você teria gostado se eu pudéssemos jogar um pouco juntos por algumas horas?"
+  },
+  {
+    "model": "qwen3.5:2b-q4_K_M",
+    "case": 2,
+    "prompt": "Eu falei \"I have 25 years\". Está certo? Me explica sem complicar.",
+    "first_token_s": 0.11,
+    "total_s": 0.45,
+    "tokens_s": 88.8,
+    "done_reason": "stop",
+    "answer": "Você está correto! A frase é: *I have 25 years*. Isso significa que você tem **25 anos**. 💯"
+  },
+  {
+    "model": "qwen3.5:2b-q4_K_M",
+    "case": 3,
+    "prompt": "Qual a diferença entre \"I used to play\" e \"I am used to playing\"?",
+    "first_token_s": 0.1,
+    "total_s": 1.59,
+    "tokens_s": 89.27,
+    "done_reason": "stop",
+    "answer": "Eu não vi nenhum texto na tela que você enviou, então não sei o que está escrito lá. Se estiverem ilegíveis ou pequenos demais para ler, me avise só e eu te ajudo a identificar.\n\nNo entanto, aqui está a diferença importante entre as duas frases: **\"I used to play\"** significa que você fazia essa atividade no passado, mas não mais. É uma situação passada. Por outro lado, **\"I am used to playing\"** significa que você costuma fazer isso todos os dias agora, de forma natural e sem esforço.\n\nVocê gostaria de praticar essas frases ou entender como elas se usam em contextos diferentes?"
+  },
+  {
+    "model": "qwen3.5:2b-q4_K_M",
+    "case": 4,
+    "prompt": "Conversa anterior:\nAluno: Meu jogo favorito é Minecraft.\nProfessora: Podemos praticar inglês construindo uma casa.\nAluno: Pode ser.\nAgora continua a conversa e sugere o próximo passo.",
+    "first_token_s": 0.13,
+    "total_s": 0.55,
+    "tokens_s": 89.15,
+    "done_reason": "stop",
+    "answer": "Vou criar um plano para você construir uma casa no Minecraft com seus amigos! O que vocês vão fazer primeiro, comprar blocos ou aprender a desenhá-la no mapa?"
+  }
+]
